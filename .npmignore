@@ -1,0 +1,41 @@
+# Ignore development folders
+node_modules
+src
+public
+example
+demo
+storybook
+coverage
+
+# Ignore build configs
+rollup.config.js
+tsconfig.json
+tsconfig.build.json
+postcss.config.js
+babel.config.js
+webpack.config.js
+eslint.config.js
+.eslintrc
+.prettierrc
+.prettierignore
+jest.config.js
+
+# Ignore git & editor files
+.git
+.gitignore
+.gitattributes
+.vscode
+.idea
+
+# Ignore logs & misc
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.DS_Store
+
+# Allow dist (explicitly included just for clarity)
+!dist/
+
+# Ignore demo GIF
+demo.gif

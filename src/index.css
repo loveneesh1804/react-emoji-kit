@@ -1,0 +1,405 @@
+.react-emoji-kit-main {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.react-emoji-label {
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.15s ease-out, transform 0.15s ease-out;
+  transform: scale(1);
+  box-sizing: border-box;
+}
+.react-emoji-label.dark{
+  background-color: #121212;
+  color: #fafafa;
+}
+.react-emoji-label:hover {
+  transform: scale(1.1);
+}
+.react-emoji-label > svg {
+  width: 25px;
+  height: 25px;
+}
+.react-emoji-container {
+  position: absolute;
+  width: 550px;
+  box-shadow: 0 2px 5px rgba(11, 20, 26, 0.26),
+    0 2px 10px rgba(11, 20, 26, 0.16);
+  /* transform-origin: center bottom; */
+  box-sizing: border-box;
+  background-color: white;
+}
+.react-emoji-container.small{
+  width: 350px;
+}
+.react-emoji-container.dark{
+  background-color: #121212 !important;
+}
+.react-emoji-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.react-emoji-container-header {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px 0px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+  background-color: white;
+}
+.react-emoji-container-header.dark,
+.react-emoji-main-card.dark{
+  background-color: #121212;
+}
+.react-emoji-container-header.small{
+  padding-top: 0px;
+}
+.react-emoji-type-labels.dark > span{
+  color: #a1a1a1;
+}
+.react-emoji-type-labels {
+  display: flex;
+  align-items: center;
+  padding-bottom: 7px;
+  gap: 20px;
+  position: relative;
+}
+.react-emoji-type-labels.small{
+  gap: 5px;
+}
+.react-emoji-type-labels > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #bdbdbd;
+}
+.react-emoji-type-labels > span:hover{
+  opacity: 0.6;
+}
+.react-emoji-active-line {
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  height: 2px;
+}
+.border-btm {
+  border-bottom: 1px solid rgba(11, 20, 26, 0.06);
+  box-shadow: 0 0 5px rgba(11, 20, 26, 0.05);
+}
+.react-emoji-active-line > span {
+  height: 4px;
+  transition: left 0.2s ease;
+  background-color: black;
+  position: absolute;
+  bottom: 2px;
+  border-radius: 10px;
+}
+.react-active-label > svg {
+  color: rgb(113, 113, 113);
+}
+.react-active-label.dark > svg{
+  color: #fafafa ;
+}
+.react-emoji-search-bar {
+  background-color: #f7f5f3;
+  padding: 4px 12px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.react-emoji-search-bar.dark{
+  background-color: #1e1e1e;
+}
+.close-search-result {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.close-search-result > svg {
+  color: rgba(84, 101, 111, 0.75);
+}
+.close-search-result.dark > svg{
+  color: #8a8a8a;
+}
+.react-emoji-search-bar > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 0px;
+  font-size: 15px;
+  width: 100%;
+}
+.react-emoji-search-bar.dark > input{
+  color:#a1a1aa;
+}
+.react-emoji-search-bar > svg {
+  width: 18px;
+  height: 18px;
+  color: #8a8a8a;
+}
+.react-emoji-main-card {
+  box-sizing: border-box;
+  height: calc(100% - (93px + 45px));
+  overflow-y: auto;
+  width: 99.5%;
+  padding: 5px 15px 5px 10px;
+  margin: 0px 0px;
+  margin-bottom: 2px;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.react-emoji-main-card.small{
+  height: calc(100% - 93px);
+}
+.react-emoji-sub-sections {
+  display: flex;
+  flex-direction: column;
+}
+.react-emoji-sub-sections > p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0px 8px 4px 8px;
+  padding: 5px 0px 8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #8a8a8a;
+}
+.react-emoji-main-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 6px;
+  margin: 0px 8px;
+  row-gap: 10px;
+}
+.react-emoji-main-grid.small{
+  grid-template-columns: repeat(8,1fr);
+}
+.react-emoji-main-grid > span {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.react-emoji-main-card::-webkit-scrollbar {
+  width: 6px;
+}
+.react-emoji-main-card::-webkit-scrollbar-track {
+  background: white;
+}
+.react-emoji-main-card.dark::-webkit-scrollbar-track {
+  background: #121212;
+}
+.react-emoji-main-card::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 20px;
+}
+.react-emoji-main-card.dark::-webkit-scrollbar-thumb{
+  background: #515151;
+}
+.react-emoji-footer {
+  border-top: 1px solid #cdcdcd;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-emoji-footer.dark{
+  border-color: #282828;
+}
+.react-emoji-footer > span {
+  padding: 4px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f5f3;
+  justify-content: center;
+  cursor: pointer;
+}
+.react-emoji-footer.dark > span{
+  /* border-color: #001b18; */
+  border-color: transparent;
+  background-color: #1e1e1e;
+}
+.react-emoji-footer > span > svg {
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+.react-emoji-footer.dark > span > svg{
+  color: #fafafa;
+}
+.react-emoji-variants-card {
+  position: relative;
+}
+.emoji-variant-pointer {
+  position: absolute;
+  background-color: #f0f2f5;
+  width: 13px;
+  height: 13px;
+  transform: rotate(45deg) translateX(-50%);
+  left: 50%;
+  z-index: 1001;
+  transition: top 0.1s ease;
+}
+.emoji-variant-pointer.dark{
+  /* background-color: #515151; */
+  background-color: #1e1e1e;
+}
+.emoji-variant-pointer.bottom{
+  top: 39px;
+}
+.emoji-variant-pointer.top{
+  top: -12px;
+}
+.emoji-variant-container {
+  position: absolute;
+  top: -62px;
+  left: -18px;
+  max-width: 256px;
+  transition: top 0.1s ease;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 16px;
+  padding: 9px 14px;
+  overflow: visible;
+  margin-bottom: 12px;
+  background-color: #f0f2f5;
+  /* box-shadow: 0px 4px 20px rgba(11, 20, 26, 0.1),
+    0px 8px 17px rgba(11, 20, 26, 0.16); */
+    box-shadow:
+  0px 6px 20px -4px rgba(11, 20, 26, 0.12),
+  0px 12px 24px -6px rgba(11, 20, 26, 0.18);
+}
+.emoji-variant-container.dark{
+  background-color: #1e1e1e;
+}
+.emoji-variant-container.flex{
+  display: flex;
+}
+.emoji-variant-container.grid{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  padding-top: 4px;
+}
+.emoji-variant-container > span {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+
+  transform: scale(0.6);
+  opacity: 0;
+
+  animation: popupScale 220ms cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  transform-origin: center bottom;
+}
+
+@keyframes popupScale {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.emoji-variant-container.flex > span:first-child {
+  border-right: 1px solid rgba(59, 74, 84, 0.2);
+  border-radius: 8px;
+  margin-right: 12px;
+  padding-right: 12px;
+}
+.emoji-variant-container.flex.dark > span:first-child,
+.emoji-variant-container.grid.dark > span:first-child{
+  border-color: #282828;
+}
+.emoji-variant-container.grid > span:first-child{
+  border-bottom: 1px solid rgba(59, 74, 84, 0.2);
+  margin-right: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  grid-column: 3 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OPEN POPUP ANIMATION */
+@keyframes popupIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* CLOSE POPUP ANIMATION */
+@keyframes popupOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+.react-emoji-container {
+  transform-origin: top left; /* WhatsApp style */
+}
+
+.popup-open {
+  animation: popupIn 150ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.popup-close {
+  animation: popupOut 150ms cubic-bezier(0.22, 1, 0.36, 1);
+}

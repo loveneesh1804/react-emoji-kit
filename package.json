@@ -1,0 +1,57 @@
+{
+  "name": "react-emoji-kit",
+  "version": "1.0.6",
+  "description": "A modern, high-performance emoji picker for React apps. Built with zero dependencies, optimized rendering, category-based navigation, recent emoji memory, and ultra-smooth animations. Perfect for chat apps, social platforms, form inputs, and any UI needing a fast, clean emoji selection experience.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "emoji",
+    "emojis",
+    "emoji-picker",
+    "emoji-selector",
+    "react-emoji",
+    "react-emoji-picker",
+    "emoji-input",
+    "emoji-component",
+    "emoji-keyboard",
+    "recent-emojis",
+    "emoji-search",
+    "emoji-categories",
+    "react",
+    "react-component",
+    "react-ui",
+    "ui-component",
+    "lightweight",
+    "fast",
+    "performance"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "author": "loveneesh pathak",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/react": "^19.2.6",
+    "react": "^19.2.0",
+    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "rollup": "^4.53.3"
+  }
+}
