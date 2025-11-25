@@ -7,10 +7,6 @@
 
 ---
 
-## Demo
-
-![Emoji Picker Demo](https://raw.githubusercontent.com/loveneesh1804/react-emoji-kit/main/demo.gif)
-
 ## Description
 
 **react-emoji-kit** is a modern, light weight and high-performance emoji picker for React apps.  
@@ -31,6 +27,11 @@ Perfect for chat apps, social platforms, forms, or any UI needing a clean emoji 
 - **Zero setup required** – CSS is automatically injected; no manual imports needed.  
 - **TypeScript ready** – Fully typed for safety and autocompletion in editors.  
 - **Compatible with React projects** – Works seamlessly with CRA, Vite, Next.js, and more.  
+
+## Demo
+
+![Emoji Picker Demo](https://raw.githubusercontent.com/loveneesh1804/react-emoji-kit/main/demo.gif)
+
 
 ## Installation
 
