@@ -30,7 +30,7 @@ Perfect for chat apps, social platforms, forms, or any UI needing a clean emoji 
 
 ## Demo
 
-![Emoji Picker Demo](./demo/demo.gif)
+![Emoji Picker Demo](https://raw.githubusercontent.com/loveneesh1804/react-emoji-kit/main/demo.gif)
 
 ## Installation
 
@@ -91,10 +91,9 @@ export const App = () => {
 | ------------- |:-------------:| :-----------:| :---------:|
 | onEmojiClick      | `(emoji: string) => void `    | Callback fired when a user clicks an emoji. Receives the clicked emoji. | - |
 | inputRef     | ` React.RefObject<HtmlInputElement \| HTMLTextAreaElement> ` | Ref to an `<input>` or `<textarea>` element. Clicking an emoji inserts it automatically at the cursor position. | - |
-| label      | `React.ReactNode `    | Content or button shown to the user. If not provided, a smile svg will appear. | <svg height="24" role="img" viewBox="0 0 24 24" width="24" > <path d="M15.83 10.997a1.167 1.167 0 1 0 1.167 1.167 1.167 1.167 0 0 0-1.167-1.167Zm-6.5 1.167a1.167 1.167 0 1 0-1.166 1.167 1.167 1.167 0 0 0 1.166-1.167Zm5.163 3.24a3.406 3.406 0 0 1-4.982.007 1 1 0 1 0-1.557 1.256 5.397 5.397 0 0 0 8.09 0 1 1 0 0 0-1.55-1.263ZM12 .503a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12 .503Zm0 21a9.5 9.5 0 1 1 9.5-9.5 9.51 9.51 0 0 1-9.5 9.5Z"></path>
-  </svg> | 
+| label      | `React.ReactNode `    | Content or button shown to the user. If not provided, a smile svg will appear. | ![icon](https://res.cloudinary.com/djwpcqv3o/image/upload/w_20/v1764047070/svgviewer-png-output_usi7js.png) | 
 | dark | `boolean` | Enables dark mode styling. When true, the picker adapts to dark mode. You can also pass your global theme state here to sync with your app theme. | `false` |
-| size | `'Regular'` \| `'Small'` | Controls the size of the **emoji picker**. Has two variants: 'Regular' (default) and 'Small'. | `Regular`| 
+| size | `'Regular'` \| `'Small'` | Controls the size of the **emoji picker**. Has two variants: 'Regular' (default) and 'Small'. | `'Regular'`| 
 | showOnMobile | `boolean` | Controls whether the emoji picker is **visible on mobile devices.** Most mobile keyboards have a built-in emoji picker, so by default the component is hidden.Set this to **true to override and show the picker on mobile.**| `false` |
 
 #### Note for Mobile Devices

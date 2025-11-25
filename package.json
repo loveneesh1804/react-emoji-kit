@@ -53,5 +53,10 @@
   "dependencies": {
     "fflate": "^0.8.2",
     "rollup": "^4.53.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loveneesh1804/react-emoji-kit"
+  },
+  "homepage": "https://github.com/loveneesh1804/react-emoji-kit#readme"
 }

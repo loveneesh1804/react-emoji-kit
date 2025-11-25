@@ -698,7 +698,7 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
         onClick={handleOpen}
         role="button"
         title="Emojis"
-        className={`react-emoji-label ${dark && "dark"}`}
+        className={`react-emoji-label ${dark ? "dark" : ""}`}
       >
         {label || <IoLabelIcon />}
       </span>
@@ -707,7 +707,7 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
         <>
           <div
             className={`react-emoji-container 
-          ${dark && "dark"}
+          ${dark ? "dark" : ""}
           ${anim === "open" ? "popup-open" : ""}
           ${anim === "close" ? "popup-close" : ""}
         `}
@@ -716,12 +716,12 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
           >
             <div
               className={`react-emoji-container-header
-              ${dark && "dark"}
+              ${dark ? "dark" : ""}
                ${showBtm ? "border-btm" : ""}`}
             >
               <div
                 className={`react-emoji-type-labels ${
-                  currentSize === "Small" && "small"
+                  currentSize === "Small" ? "small" : ""
                 } ${dark && "dark"}`}
                 ref={lineRef}
               >
@@ -729,7 +729,7 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
                   <span
                     style={{ width: ` calc(100% / ${labelsArr.length})` }}
                     className={
-                      active === i ? `react-active-label ${dark && "dark"}` : ""
+                      active === i ? `react-active-label ${dark ? "dark" : ""}` : ""
                     }
                     onClick={() => handleLabelClick(i)}
                     key={i}
@@ -760,7 +760,7 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
                   ></span>
                 </div>
               </div>
-              <div className={`react-emoji-search-bar ${dark && "dark"}`}>
+              <div className={`react-emoji-search-bar ${dark ? "dark" : ""}`}>
                 <IoSearchIcon />
                 <input
                   value={search}
@@ -781,13 +781,13 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
             <div
               ref={mainCardRef}
               className={`react-emoji-main-card ${
-                currentSize === "Small" && "small"
-              } ${dark && "dark"}`}
+                currentSize === "Small" ? "small" : ""
+              } ${dark ? "dark" : ""}`}
             >
               {search.length ? (
                 <div
                   className={`react-emoji-main-grid ${
-                    currentSize === "Small" && "small"
+                    currentSize === "Small" ? "small" : ""
                   }`}
                 >
                   {searchResults.map((el, i) => (
@@ -807,12 +807,12 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
                         if (el) sectionRefs.current[0] = el;
                       }}
                       data-index={0}
-                      className={`react-emoji-sub-sections ${dark && dark}`}
+                      className={`react-emoji-sub-sections ${dark ? "dark" : ""}`}
                     >
                       <p>Recent</p>
                       <div
                         className={`react-emoji-main-grid ${
-                          currentSize === "Small" && "small"
+                          currentSize === "Small" ? "small" : ""
                         }`}
                       >
                         {recentData.map((el, i) => (
@@ -842,7 +842,7 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
                             <p>{el.category}</p>
                             <div
                               className={`react-emoji-main-grid ${
-                                currentSize === "Small" && "small"
+                                currentSize === "Small" ? "small" : ""
                               }`}
                             >
                               {el.items.map((emoji, idx) =>
@@ -866,13 +866,13 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
                                       <>
                                         <div
                                           className={`emoji-variant-pointer ${
-                                            dark && "dark"
+                                            dark ? "dark" : ""
                                           } ${variantPosition}`}
                                         ></div>
                                         <div
                                           ref={variantRef}
                                           className={`emoji-variant-container 
-                                          ${dark && "dark"}
+                                          ${dark ? "dark" : ""}
                                           ${
                                             emoji.variations.length > 7
                                               ? "grid"
@@ -931,7 +931,7 @@ const EmojiPicker = <T extends HTMLInputElement | HTMLTextAreaElement>({
               )}
             </div>
             {currentSize === "Regular" ? (
-              <div className={`react-emoji-footer ${dark && "dark"}`}>
+              <div className={`react-emoji-footer ${dark ? "dark" : ""}`}>
                 <span>
                   <IoSmileIcon />
                 </span>
