@@ -1,6 +1,6 @@
 {
   "name": "react-emoji-kit",
-  "version": "1.0.62",
+  "version": "1.0.0",
   "description": "A modern, high-performance emoji picker for React apps. Built with zero dependencies, optimized rendering, category-based navigation, recent emoji memory, and ultra-smooth animations. Perfect for chat apps, social platforms, form inputs, and any UI needing a fast, clean emoji selection experience.",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
