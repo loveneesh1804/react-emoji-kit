@@ -30,7 +30,7 @@ Perfect for chat apps, social platforms, forms, or any UI needing a clean emoji 
 
 ## Demo
 
-![Emoji Picker Demo](https://raw.githubusercontent.com/loveneesh1804/react-emoji-kit/main/demo.gif)
+![Emoji Picker Demo](./demo/demo.gif)
 
 ## Installation
 
